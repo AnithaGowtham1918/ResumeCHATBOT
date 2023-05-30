@@ -1,0 +1,19 @@
+.message-right{
+    background: #91fbff;
+    border-radius: 25px;
+    padding: 0.5em 1em !important;
+    margin: 1em;
+}
+.message-left{
+    background: aliceblue;
+    border-radius: 25px;
+    padding: 0.5em 1em !important;
+    margin: 1em;
+}
+.message-text{
+    font-size: 18px;
+}
+.message-icon{
+    font-size: 25px;
+    margin: 5px;
+}
