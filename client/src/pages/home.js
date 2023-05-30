@@ -8,7 +8,8 @@ function Home(props) {
         message:"Hai Welcome to ResumeChat. May I know your name?"
     }]);
     const [text,setText]=useState('');
-    function onSend(){
+    function onSend(e){
+        e.preventDefault();
         let list =[...messages,{message:text,user:true}];
         if(list.length>2){
             const reply = analyze(text);
@@ -21,7 +22,7 @@ function Home(props) {
                 message:`Hi, ${text}`,
             },
         {
-            message:"How can i help you?",
+            message:"Chat with me to know about ANITHA",
         },
     ];
     }
@@ -36,8 +37,10 @@ function Home(props) {
         <div className='chat-message' >
             {messages.length>0 && messages.map((data)=><ChatMessage {...data} />)}
             <div className='d-flex mt-2'>
-                <input type='text' className='form-control' value={text} onChange={(e)=>setText(e.target.value)}></input>
-               <Button type="primary" className='ms-2' onClick={onSend}>Send</Button>
+               <form className='d-flex' style={{width:'100%'}}>
+               <input type='text' className='form-control' value={text} onChange={(e)=>setText(e.target.value)}></input>
+               <Button type="submit" className='ms-2' onClick={onSend}>Send</Button>
+                </form>
             </div>
             <div id='copyright' className='mt-3' style={{fontSize:"13px"}}>Copyrights Reserved By ANITHA GOWTHAM</div>
         </div>
