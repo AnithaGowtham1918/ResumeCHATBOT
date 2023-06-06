@@ -53,6 +53,9 @@ else if(data.includes('anitha')||data.includes('introduction')){
 else if(data.includes('salary')||data.includes('salary expectations')){
     return 'As per the Industry Standard'
 }
+else if(data.includes('objective')||data.includes('aim')||data.includes('Summary')){
+    return "Motivated and ambitious fresher actively seeking an Associate Software Developer role, driven by a strong desire to excel in the field of software development. Actively learning and improving skills in Data Structures and Algorithms (DSA), firmly believing in the power of consistent learning and growth. Demonstrated practical experience by successfully creating and deploying a project called ResumeChatBot, showcasing innovation and forward-thinking for future technologies. Possesses a solid foundation in programming languages, coupled with analytical thinking and problem-solving abilities."
+}
 
     return `I can't get you Sorry`;
 }
