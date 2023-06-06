@@ -37,7 +37,7 @@ function Home(props) {
         <div className='chat-message' >
             {messages.length>0 && messages.map((data)=><ChatMessage {...data} />)}
             <div className='d-flex mt-2'>
-               <form className='d-flex' style={{width:'100%'}}>
+               <form className='d-flex' style={{width:'100%',position: 'sticky'}}>
                <input type='text' className='form-control' value={text} onChange={(e)=>setText(e.target.value)}></input>
                <Button type="submit" className='ms-2' onClick={onSend}>Send</Button>
                 </form>

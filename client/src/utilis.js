@@ -50,7 +50,7 @@ else if(data.includes('hobbies')||data.includes('hobby')){
 else if(data.includes('anitha')||data.includes('introduction')){
     return <Intro></Intro>
 }
-else if(data.includes('expected salary')||data.includes('salary expectations')){
+else if(data.includes('salary')||data.includes('salary expectations')){
     return 'As per the Industry Standard'
 }
 
